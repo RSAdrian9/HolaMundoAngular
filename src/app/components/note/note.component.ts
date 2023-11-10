@@ -20,7 +20,11 @@ export class NoteComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    
+    console.log("NGONINIT")    
+  }
+
+  ngAfterContentInit(){
+    console.log("NGA");
   }
 
   public editNoteFn(){

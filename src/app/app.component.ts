@@ -17,6 +17,9 @@ export class AppComponent {
   public editingNote($event:INote){
     console.log("Editando Nota");
     console.log($event);
+  }
 
+  public alerta(){
+    alert("Alerta Roja");
   }
 }
