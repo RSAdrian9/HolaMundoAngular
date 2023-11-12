@@ -8,10 +8,11 @@ import { ButtonComponent } from './components/button/button.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { NotesService } from './services/notes.service';
+import { FormNoteComponent } from './components/form-note/form-note.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
