@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotesService } from './services/notes.service';
 import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { LoginService } from './services/login.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginService } from './services/login.service';
     AppRoutingModule,
     ButtonComponent,
     NavbarComponent,
-    SocialLoginModule
+    SocialLoginModule,
+    HttpClientModule
   ],
   providers: [NotesService,
     {
@@ -30,7 +32,7 @@ import { LoginService } from './services/login.service';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '870225859421-tacughl35u9p8rgne25culc88ujnadek.apps.googleusercontent.com'
+              '526203572483-ks39h33h4osdp0n829p7c7spq1790gng.apps.googleusercontent.com'
             )
           }
         ],
